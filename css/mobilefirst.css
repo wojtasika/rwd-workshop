@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,
+div,
+footer {
+    flex-basis: 100%;
+    height: 400px;
+}
+
+header,
+footer {
+    height: 100px;
+}
+
+header {
+    background-color: aqua;
+}
+
+div:nth-of-type(1) {
+    background-color: darkorchid;
+}
+
+div:nth-of-type(2) {
+    background-color: darkgoldenrod;
+}
+
+div:nth-of-type(3) {
+    background-color: yellow;
+}
+
+div:nth-of-type(4) {
+    background-color: darkgreen;
+}
+
+footer {
+    background-color: chartreuse;
+}
+
+@media all and (min-width: 480px) {
+    div {
+        flex-basis: 50%;
+    }
+/*    idziemy w gore przedialy musza byc wyzsze*/
+
+@media all and (min-width: 768px) {
+    div {
+        flex-basis: 25%;
+    }
+}
+
+@media all and (min-width: 992px) {
+    div,
+    header {
+        flex-basis: 20%;
+        height: 400px;
+    }
+}    
